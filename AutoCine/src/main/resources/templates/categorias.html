@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- <meta charset="ISO-8859-1">  -->
+<title th:text="${titulo} + ' | Categorías'"></title>
+</head>
+<body>
+	<h1>CATEGORÍAS</h1>
+	<h2>Los mejores géneros de películas para ti</h2>
+	<ul>
+		<li th:each = "tmpEmp:${categorias}" th:text="${tmpEmp}"></li>
+	</ul>
+</body>
+</html>

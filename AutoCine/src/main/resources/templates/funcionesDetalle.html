@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!--<meta charset="ISO-8859-1">-->
+<title>MOVIE DRIVE || FUNCIONES || INFORMACIÓN</title>
+<!-- ICONOS -->
+<script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+<link th:href="@{/css/header.css}" rel="stylesheet">
+<link th:href="@{/css/estilosFuncion.css}" rel="stylesheet">
+<link rel="icon" href="favicon.ico">
+<!-- Bootstrap core CSS -->
+<link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link th:href="@{/bootstrap/css/jumbotron.css}" rel="stylesheet">
+<link th:href="@{/bootstrap/css/sticky-footer-navbar.css}"
+	rel="stylesheet">
+	<!-- FUENTES -->       
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Teko:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+<!-- INICIO HEADER -->    
+<header id="header">  
+    <nav class="menu">
+      <div class="logo"> 
+        <a href="#" class="logito">
+          <img th:src="@{/images/logo.png}" alt="" class="img-fluid img-logo" height="200px" width="180px">
+        </a>
+        <!--  <a href="#" class="marca">MOVIE DRIVE</a>-->
+        <a href="#" class="btn-menu" id="btn-menu">
+          <i class="fa-solid fa-bars icono-menu"></i>
+        </a>  
+      </div>  
+      <div class="enlaces" id="enlaces"> 
+        <a href="#" class="links">INICIO</a>
+        <a href="#" class="links">CATEGORIAS</a>
+        <a href="#" class="here">FUNCIONES</a>
+        <a href="#" class="links">PELICULAS</a>
+        <a href="#" class="links">SALAS</a>
+        <a href="#" class="links">SEDES</a>
+        <a href="#" class="links">CONFITERIA</a>
+      </div>
+    </nav>
+    <div class="linea"></div>
+</header>
+  <!-- FIN HEADER -->
+	<h1 class="tittle_detalle">-FUNCIÓN ESTELAR-</h1>
+	
+	<!-- INICIO DE DETALLES-->
+	<main role="main">
+		<hr> 
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img class="rounded mx-auto d-block"
+						th:src="@{/images/{img} (img=${funcion.imagen})}"
+						alt="Generic placeholder image" width="280px" height="490px"> 
+				</div>
+				<div class="col-md-9">      
+					<div class="card">
+						<h4 class="card-header">
+							<strong th:text="${funcion.NOMBRE_PELICULA}"></strong>
+						</h4>
+						<div class="card-body">
+							<h5 class="card-title">
+								<strong>Nº SALA: </strong> <span th:text="${funcion.ID_SALA}">Nombre la categoría</span>
+							</h5>
+							<h6 class="card-title">
+								<strong>Nº DE SEDE: </strong> <span th:text="${funcion.ID_SEDE}">
+								</span>
+							</h6>
+							<h6 class="card-title">
+								<strong>FECHA: </strong><span
+									th:text="${funcion.FECHA}">$9000</span>
+							</h6>
+							<p class="card-text" th:text="${funcion.DESCRIPCION}"></p>
+							<br>
+							<a class="btn btn-primary" href="#" role="button"
+								title="Quiero aplicar para esta oferta de trabajo."><i
+								class="fas fa-file" aria-hidden="true"></i> Tabla</a>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+	
+	<!-- FIN DE DETALLE -->
+	  <!-- INICIO FOOTER -->
+	  <br>
+	  <footer class="footer">
+		<br>
+		<section class="container footer-container">
+		  <section class="row">
+			<section class="col-xs-12 col-sm-12 col-md-4 border-right">
+			  <h2>¿QUIENES SOMOS?</h2>
+			  <p class="p-footer">Somos un apasionado grupo de estudiantes de CERTUS del quinto ciclo. Hemos creado esta
+				página con dedicación y entusiasmo para compartir nuestra pasión por el cine y la comodidad de poder verlo
+				desde nuestro propios asientos. Nuestra mision es proporconarte una gran variedad de peliculas y comodos
+				espacios para disfrutar de lamejor manera estas obras de arte. ¡Bienvenido a MOVIE DRIVE!</p>
+			</section>
+			<section class="col-xs-12 col-sm-12 col-md-4 border-right">
+			  <h2 class="c2">ENLACES RAPIDOS</h2>
+			  <div>
+				<a href="index.html" class="here-footer">INICIO</a>
+				<a href="#" class="enlaces-footer">CATEGORIAS</a>
+				<a href="funciones.html" class="enlaces-footer">FUNCIONES</a>
+				<a href="peliculas.html" class="enlaces-footer">PELICULAS</a>
+				<a href="salas.html" class="enlaces-footer">SALAS</a>
+				<a href="sedes.html" class="enlaces-footer">SEDES</a>
+				<a href="confiteria.html" class="enlaces-footer">CONFITERIA</a>
+			  </div>
+			</section>
+			<section class="col-xs-12 col-sm-12 col-md-4">
+			  <h2 class="c2">INFORMACION DE CONTACTO</h2>
+			  <div>
+				<a href="https://wa.link/odayyx" class="contacto-footer" target="_blank"><i
+					class="fa-brands fa-whatsapp icono-footer" style="color: #25D366;"></i>WHASTAPP</a>
+				<a href="#" class="contacto-footer" target="_blank"><i class="fa-brands fa-facebook icono-footer"
+					style="color: #4267B2;"></i>FACEBOOK</a>
+				<a href="#" class="contacto-footer" target="_blank"><i class="fa-brands fa-twitter icono-footer"
+					style="color: #1DA1F2;"></i>TWITTER</a>
+				<a href="#" class="contacto-footer" target="_blank"><i class="fa-brands fa-instagram icono-footer"
+					style="color: #C13584;"></i>INSTAGRAM</a>
+			  </div>
+			</section>
+		  </section>
+		  <section class="row final-foo">
+			<div class="linea2"></div>
+		  </section>
+		  <section class="row">
+			<p class="final-p">Movie Driver © 2024 | Todos los derechos de autor reservados</p>
+		  </section>
+		</section>
+	  </footer>
+	  <!-- FIN FOOTER -->
+  <!-- LIBRERIAS PARA EL MENÚ -->
+  <script th:src="@{/js/headroom.min.js}"></script>
+  <script th:src="@{/js/menu-flex.js}"></script>
+		<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+	
+</body>
+</html>

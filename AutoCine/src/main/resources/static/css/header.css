@@ -1,0 +1,143 @@
+header{
+    background-color: #F4C210;
+    position: fixed;
+    top: 0;
+    z-index: 1000000000000000;
+    width: 100%;
+    font-family: 'Teko';
+    font-size: 1.8em;
+}
+.menu{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 0;
+}
+.img-logo{
+    width: 4em;
+    padding: 0;
+    margin: 0;
+    margin-right: 1em;
+}
+.logito{
+    text-decoration: none;
+}
+.marca{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0075FF;
+}
+.marca:hover{
+    color: #0075FF;
+
+}
+.btn-menu{
+    display: none;
+}
+.enlaces{
+    text-align: right;
+}
+.enlaces .links{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    padding: .3em;
+}
+.enlaces .links:hover{
+    color: #0075FF;
+    transition: all .4s ease-in-out;
+}
+.here{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0075FF;
+    padding: .3em;
+}
+.here:hover{
+    color: #0075FF;
+}
+.linea{
+    height: .15em; 
+    background-color: #0075FF;
+}
+@media screen and (max-width: 1023px) {
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+    .logo .marca{
+        text-align: left;
+        font-size: 1.5em;
+        color: #EFA758;
+        margin-right: 1.2em;
+        margin-left: .3em;
+    }
+    
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: #EFA758;
+    }
+    .img-logo{
+        height: 2.6em;
+        width: 2.6em;
+    }
+    .logo a{
+        display: block;
+        color: var(--color-primario);
+        font-size: 2em;
+    }
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+.container-tittle-page{
+    margin-top: 1.7em;
+}
+
+.title-page {
+    padding-top: 1.7em;
+    color: #0075FF;
+    font-family: 'Teko';
+    text-align: center;
+    align-items: center;
+    font-size: 5.5em;
+}
+  
+.line-title-page {
+    height: .2em;
+    background-color: #0075FF;
+}
+.enlaces2{
+    text-align: center;
+    margin: 1em auto;
+}
+.enlaces2 .links{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    padding: .3em;
+}
+.enlaces2 .links:hover{
+    color: #0075FF;
+    transition: all .4s ease-in-out;
+}
+
+@media screen and (max-width: 1023px) {
+    .container-tittle-page{
+        margin-top: 1.6em;
+    }
+    .border-right{
+        border: none;
+    }
+}

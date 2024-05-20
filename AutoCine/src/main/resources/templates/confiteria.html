@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- <meta charset="ISO-8859-1">  -->
+<title th:text="${titulo} + ' | Confitería'"></title>
+</head>
+<body>
+	<h1>CONFITERÍA</h1>
+	<h2>Nuestros aperitivos</h2>
+	<h3 th:text="'PRODUCTO: '+ ${NOMBRE_CONFI}" ></h3>
+	<h3 th:text="'PRECIO: '+ ${PRECIO_UNITARIO}" ></h3>
+	<h3 th:text="'STOCK: '+ ${STOCK}" ></h3>
+</body>
+</html>

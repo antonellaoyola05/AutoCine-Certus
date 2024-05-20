@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- <meta charset="ISO-8859-1">  -->
+<title th:text="${titulo} + ' | Sede'"></title>
+</head>
+<body>
+	<h1>SEDES</h1>
+	<h2>Nuestras sedes</h2>
+	<h3 th:text = "'SEDE: ' + ${NOMBRE_SEDE}"></h3>
+	<h3 th:text = "'CIUDAD: ' + ${CIUDAD}"></h3>
+	<h3 th:text = "'DISTRITO: ' + ${DISTRITO}"></h3>
+</body>
+</html>

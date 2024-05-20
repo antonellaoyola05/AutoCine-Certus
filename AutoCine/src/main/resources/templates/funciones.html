@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<!-- <meta charset="ISO-8859-1">  -->
+<title>MOVIE DRIVE || FUNCIONES</title>
+<link th:href="@{/css/header.css}" rel="stylesheet">
+<link th:href="@{/css/estilosFuncion.css}" rel="stylesheet">
+<link rel="icon" href="favicon.ico">
+<!-- ICONOS -->
+<script src="https://kit.fontawesome.com/812c8ee19a.js"
+	crossorigin="anonymous"></script>
+<!-- FUENTES -->
+<link
+	href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Teko:wght@400;600&display=swap"
+	rel="stylesheet">
+<!-- Bootstrap core CSS -->
+<link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link th:href="@{/bootstrap/css/jumbotron.css}" rel="stylesheet">
+<link th:href="@{/bootstrap/css/sticky-footer-navbar.css}"
+	rel="stylesheet">
+<!-- LIBRERIA JQUERY DEL MENU -->
+<script th:src="@{/js/jquery.js}"></script>
+<!-- FIN DE LIBRERIA JQUERY -->
+</head>
+<body>
+	<!-- INICIO HEADER -->
+	<header id="header">
+		<nav class="menu">
+			<div class="logo">
+				<a href="#" class="logito"> <img th:src="@{/images/logo.png}"
+					alt="" class="img-fluid img-logo" height="200px" width="180px">
+				</a>
+				<!--  <a href="#" class="marca">MOVIE DRIVE</a>-->
+				<a href="#" class="btn-menu" id="btn-menu"> <i
+					class="fa-solid fa-bars icono-menu"></i>
+				</a>
+			</div>
+			<div class="enlaces" id="enlaces">
+				<a href="#" class="links">INICIO</a> <a href="#" class="links">CATEGORIAS</a>
+				<a href="#" class="here">FUNCIONES</a> <a href="#" class="links">PELICULAS</a>
+				<a href="#" class="links">SALAS</a> <a href="#" class="links">SEDES</a>
+				<a href="#" class="links">CONFITERIA</a>
+			</div>
+		</nav>
+		<div class="linea"></div>
+	</header>
+	<!-- FIN HEADER -->
+	<h1 class="titulo_funcion">-FUNCIONES-</h1>
+	<h2 class="subtitulo_funcion">Nuestras funciones</h2>
+	<br>
+	<center>
+		<div th:each="funciones : ${funciones}"
+			class="row row-cols-1 row-cols-md-3 g-4 container">
+			<div class="col">
+				<div class="card_funciones">
+					<img th:src="@{/images/{img} (img=${funciones.imagen})}"
+						class="card-img-top" alt="...">
+					<div class="card-body">
+						<h3 th:text="${funciones.NOMBRE_PELICULA}" class="card-title"></h3>
+						<p class="card-text">
+							<strong>Nº DE FUNCIÓN: </strong><span
+								th:text="${funciones.ID_SALA}"></span>
+						</p>
+						<p class="card-text">
+							<strong>Nº DE SEDE: </strong><span th:text="${funciones.ID_SEDE}"></span>
+						</p>
+						<p class="card-text">
+							<strong>FECHA: </strong><span th:text="${funciones.FECHA}"></span>
+						</p>
+						<p class="boton">
+							<a class="btn btn-secondary"
+								th:href="@{/funciones/view/{ID_FUNCION} (ID_FUNCION=${funciones.ID_FUNCION}) }"
+								role="button"><i class="fa-solid fa-circle-info"></i> Más
+								información </a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col">
+				<div class="card_funciones">
+					<img th:src="@{/images/{img} (img=${funciones.imagen})}"
+						class="card-img-top" alt="...">
+					<div class="card-body">
+						<h3 th:text="${funciones.NOMBRE_PELICULA}" class="card-title"></h3>
+						<p class="card-text">
+							<strong>Nº DE FUNCIÓN: </strong><span
+								th:text="${funciones.ID_SALA}"></span>
+						</p>
+						<p class="card-text">
+							<strong>Nº DE SEDE: </strong><span th:text="${funciones.ID_SEDE}"></span>
+						</p>
+						<p class="card-text">
+							<strong>FECHA: </strong><span th:text="${funciones.FECHA}"></span>
+						</p>
+						<p class="boton">
+							<a class="btn btn-secondary"
+								th:href="@{/funciones/view/{ID_FUNCION} (ID_FUNCION=${funciones.ID_FUNCION}) }"
+								role="button"><i class="fa-solid fa-circle-info"></i> Más
+								información </a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card_funciones">
+					<img th:src="@{/images/{img} (img=${funciones.imagen})}"
+						class="card-img-top" alt="...">
+					<div class="card-body">
+						<h3 th:text="${funciones.NOMBRE_PELICULA}" class="card-title"></h3>
+						<p class="card-text">
+							<strong>Nº DE FUNCIÓN: </strong><span
+								th:text="${funciones.ID_SALA}"></span>
+						</p>
+						<p class="card-text">
+							<strong>Nº DE SEDE: </strong><span th:text="${funciones.ID_SEDE}"></span>
+						</p>
+						<p class="card-text">
+							<strong>FECHA: </strong><span th:text="${funciones.FECHA}"></span>
+						</p>
+						<p class="boton">
+							<a class="btn btn-secondary"
+								th:href="@{/funciones/view/{ID_FUNCION} (ID_FUNCION=${funciones.ID_FUNCION}) }"
+								role="button"><i class="fa-solid fa-circle-info"></i> Más
+								información </a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card_funciones">
+					<img th:src="@{/images/{img} (img=${funciones.imagen})}"
+						class="card-img-top" alt="...">
+					<div class="card-body">
+						<h3 th:text="${funciones.NOMBRE_PELICULA}" class="card-title"></h3>
+						<p class="card-text">
+							<strong>Nº DE SALA: </strong><span
+								th:text="${funciones.ID_SALA}"></span>
+						</p>
+						<p class="card-text">
+							<strong>Nº DE SEDE: </strong><span th:text="${funciones.ID_SEDE}"></span>
+						</p>
+						<p class="card-text">
+							<strong>FECHA: </strong><span th:text="${funciones.FECHA}"></span>
+						</p>
+						<p class="boton">
+							<a class="btn btn-secondary"
+								th:href="@{/funciones/view/{ID_FUNCION} (ID_FUNCION=${funciones.ID_FUNCION}) }"
+								role="button"><i class="fa-solid fa-circle-info"></i> Más
+								información </a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</center>
+	<!-- INICIO FOOTER -->
+	<br>
+	<footer class="footer">
+		<br>
+		<section class="container footer-container">
+			<section class="row">
+				<section class="col-xs-12 col-sm-12 col-md-4 border-right">
+					<h2>¿QUIENES SOMOS?</h2>
+					<p class="p-footer">Somos un apasionado grupo de estudiantes de
+						CERTUS del quinto ciclo. Hemos creado esta página con dedicación y
+						entusiasmo para compartir nuestra pasión por el cine y la
+						comodidad de poder verlo desde nuestro propios asientos. Nuestra
+						mision es proporconarte una gran variedad de peliculas y comodos
+						espacios para disfrutar de lamejor manera estas obras de arte.
+						¡Bienvenido a MOVIE DRIVE!</p>
+				</section>
+				<section class="col-xs-12 col-sm-12 col-md-4 border-right">
+					<h2 class="c2">ENLACES RAPIDOS</h2>
+					<div>
+						<a href="index.html" class="here-footer">INICIO</a> <a href="#"
+							class="enlaces-footer">CATEGORIAS</a> <a href="funciones.html"
+							class="enlaces-footer">FUNCIONES</a> <a href="peliculas.html"
+							class="enlaces-footer">PELICULAS</a> <a href="salas.html"
+							class="enlaces-footer">SALAS</a> <a href="sedes.html"
+							class="enlaces-footer">SEDES</a> <a href="confiteria.html"
+							class="enlaces-footer">CONFITERIA</a>
+					</div>
+				</section>
+				<section class="col-xs-12 col-sm-12 col-md-4">
+					<h2 class="c2">INFORMACION DE CONTACTO</h2>
+					<div>
+						<a href="https://wa.link/odayyx" class="contacto-footer"
+							target="_blank"><i class="fa-brands fa-whatsapp icono-footer"
+							style="color: #25D366;"></i>WHASTAPP</a> <a href="#"
+							class="contacto-footer" target="_blank"><i
+							class="fa-brands fa-facebook icono-footer"
+							style="color: #4267B2;"></i>FACEBOOK</a> <a href="#"
+							class="contacto-footer" target="_blank"><i
+							class="fa-brands fa-twitter icono-footer" style="color: #1DA1F2;"></i>TWITTER</a>
+						<a href="#" class="contacto-footer" target="_blank"><i
+							class="fa-brands fa-instagram icono-footer"
+							style="color: #C13584;"></i>INSTAGRAM</a>
+					</div>
+				</section>
+			</section>
+			<section class="row final-foo">
+				<div class="linea2"></div>
+			</section>
+			<section class="row">
+				<p class="final-p">Movie Driver © 2024 | Todos los derechos de
+					autor reservados</p>
+			</section>
+		</section>
+	</footer>
+	<!-- FIN FOOTER -->
+	<!-- LIBRERIAS PARA EL MENÚ -->
+	<script th:src="@{/js/headroom.min.js}"></script>
+	<script th:src="@{/js/menu-flex.js}"></script>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+
+</body>
+
+</html>

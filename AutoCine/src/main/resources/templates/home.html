@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"> 
+<!-- <meta charset="ISO-8859-1">  -->
+<link th:href="@{/css/estilosHome.css}" rel="stylesheet">
+<title>AutoCine MOVIE DRIVE</title>
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link th:href="@{/bootstrap/css/jumbotron.css}" rel="stylesheet">
+    <link th:href="@{/bootstrap/css/sticky-footer-navbar.css}" rel="stylesheet">
+    <!-- FUENTES -->       
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Teko:wght@400;600&display=swap"
+rel="stylesheet"> 
+</head>
+<body class="principal">
+<h1 class="titulo_home">Bienvenidos al AutoCine || MOVIE DRIVE</h1> 
+<br>
+<h1 class="subtitulo">Navegue por nuestras secciones</h1>
+<center> 
+<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+    <button type="button" class="btn btn-warning"><a href="categorias.html">Categorías</a></button>
+    <button type="button" class="btn btn-warning"><a href="funciones.html">Funciones</a></button>
+    <button type="button" class="btn btn-warning"><a href="peliculas.html">Películas</a></button>
+    <button type="button" class="btn btn-warning"><a href="sala.html">Salas</a></button>
+    <button type="button" class="btn btn-warning"><a href="sede.html">Sedes</a></button>
+    <button type="button" class="btn btn-warning"><a href="confiteria.html">Confitería</a></button>
+</div>
+</center>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+</body> 
+</html>

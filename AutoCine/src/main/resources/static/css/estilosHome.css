@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.principal{
+    background-image: url(../images/portadaHome.png);
+    background-size: cover;
+}
+
+.titulo_home{
+    padding-top: 1.7em; 
+    color:#0075FF;
+    font-family: 'Teko';
+    text-align: center;
+    align-items: center;
+    font-size: 3.5em;
+}
+
+.subtitulo{
+    padding-top: 10px; 
+    color:#F4C210;
+    font-family: 'Teko';
+    text-align: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+.principal ul{
+    text-align: center;
+}
+
+.principal a{
+    padding: .6px;
+    margin: auto;
+    border-color: 2px solid #F4C210;
+    background-color: #F4C210;
+    color: white;
+    font-family: 'Teko';
+}
+
+.botones a {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #F4C210;
+    background-color: #F4C210;
+    text-decoration: none;
+}
+
+.botones a :hover{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+

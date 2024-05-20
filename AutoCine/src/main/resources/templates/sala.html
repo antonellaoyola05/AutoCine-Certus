@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- <meta charset="ISO-8859-1">  -->
+<title th:text="${titulo} + ' | Salas'"></title>
+</head>
+<body>
+	<h1>SALAS</h1>
+		<h2>Sala disponible</h2>
+	<h3 th:text = "'Número de sala = ' + ${ID_SALA}"></h3>
+	<h3 th:text = "'Descripción = ' + ${DESCRIPCION}"></h3>
+</body>
+</html>
