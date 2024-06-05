@@ -11,9 +11,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import net.AutoCine.model.Funciones;
 import net.AutoCine.model.Peliculas;
+import net.AutoCine.model.Sala;
 import net.AutoCine.model.Sede;
 import net.AutoCine.service.IFuncionesService;
 import net.AutoCine.service.IPeliculasService;
+import net.AutoCine.service.ISalaService;
 import net.AutoCine.service.ISedeService;
 
 
@@ -29,6 +31,9 @@ public class AutoCineHomeController {
 	
 	@Autowired
 	private ISedeService serviceSedes;
+	
+	@Autowired
+	private ISalaService serviceSalas;
    
 	@GetMapping("/")//RUTA PRINCIPAL ES HOME
 	public String mostrarHome(Model model) { 
@@ -53,7 +58,7 @@ public class AutoCineHomeController {
 		
 		model.addAttribute("categorias",categorias);
 		model.addAttribute("titulo", "AutoCine");
-		return "categorias";
+		return "Categorias/categorias";
 	}
 	
 	@GetMapping("/funciones.html")
@@ -74,16 +79,50 @@ public class AutoCineHomeController {
 	
 	@GetMapping("/sala.html")
 	public String mostrarSala(Model model) {
-		int ID_SALA = 1548;
+		/*int ID_SALA = 1548;
 		String DESCRIPCION = "Sala VIP , SofaCama";
 			
 		model.addAttribute("DESCRIPCION", DESCRIPCION);
 		model.addAttribute("ID_SALA",ID_SALA)	;	
-		model.addAttribute("titulo", "AutoCine");
-		return "sala";
+		model.addAttribute("titulo", "AutoCine");*/
+		return "Sala/sala";
 	}
 	
+	@GetMapping("/tabla")
+	public String mostrarTabla(Model model) {
+		List<Sala> lista = serviceSalas.buscarTodasSalas();
+		model.addAttribute("salas", lista);
+		
+		return "Sala/salaTabla";
+	}
 	
+	@GetMapping("/detalle")
+	public String mostrarDetalle(Model model) {
+		Sala sala = new Sala();
+		
+		sala.setNombre("Sala Accion");
+		sala.setUbicacion("Extremo norte, cerca del área de juegos para niños.");
+		sala.setCapacidad(80);
+		sala.setCaracteristicas1("Pantalla: 15 x 8 metros, Full HD\r\n"
+				+ "Servicios: Snack bar, baños, zona de juegos para niños");
+		
+		Sala sala1 = new Sala();
+		
+		sala1.setNombre("Sala Accion");
+		sala1.setUbicacion("Extremo norte, cerca del área de juegos para niños.");
+		sala1.setCapacidad(80);
+		sala1.setCaracteristicas1("Pantalla: 15 x 8 metros, Full HD\r\n"
+				+ "Servicios: Snack bar, baños, zona de juegos para niños");
+		
+		
+		model.addAttribute("sala", sala);
+		model.addAttribute("sala1", sala1);
+		return "Sala/salaDetalle";
+		
+		
+		
+		
+	}
 	
 	@GetMapping("/confiteria.html")
 	public String mostrarConfiteria(Model model) {
@@ -108,13 +147,13 @@ public class AutoCineHomeController {
 		
 		return "Sede/sede";
 	}
-	@GetMapping("Sede/sedeCuadros.html")
+	@GetMapping("Sede/sedeTabla.html")
 	public String mostrarSedeCuadro(Model model) {
 		
 		List<Sede> lista = serviceSedes.buscarTodasSedes(); 
 		model.addAttribute("sedes", lista);
 		
-		return "Sede/sedeCuadros";
+		return "Sede/sedeTabla";
 	}
 	
 	

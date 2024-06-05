@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MOVIE DRIVE || SEDES</title>
-<link rel="shortcut icon" th:href="@{img/logo.png}">
+<link rel="shortcut icon" href="img/logo.png">
 <!-- ICONOS -->
 <script src="https://kit.fontawesome.com/812c8ee19a.js"
 	crossorigin="anonymous"></script>
@@ -23,12 +23,6 @@
 	rel="stylesheet"
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
-<!-- Bootstrap core CSS -->
-<link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
-<!-- Custom styles for this template -->
-<link th:href="@{/bootstrap/css/jumbotron.css}" rel="stylesheet">
-<link th:href="@{/bootstrap/css/sticky-footer-navbar.css}">
-<!-- CSS -->
 
 <link th:href="@{/css/header.css}" rel="stylesheet">
 <link th:href="@{/css/footer.css}" rel="stylesheet">
@@ -39,34 +33,50 @@
 <script th:src="@{/js/jquery.js}"></script>
 <!-- FIN DE LIBRERIA JQUERY -->
 </head>
-
 <body>
+	<!-- INICIO HEADER -->
 	<!-- INICIO HEADER -->
 	<header th:insert="fragments/menu :: menu-principal"> </header>
 	<!-- FIN HEADER -->
-	<br>
+<br><br>
+<h1 class="tittle_table">Listado de Sedes</h1>
+	<table class="table table-striped table-bordered border-bark">
+		<tr class="table-warning">
+			<th>Logo</th>
+			<th>NUMERO DE SALA</th>
+			<th>NOMBRE</th>
+			<th>DISTRITO</th>
+			<th>SALARIO</th>
+			<th>DESCRIPCIÓN</th>
+			<th>DESTACADO</th>
+			<th>DETALLE</th>
+			<th>BORRAR</th>
+		</tr>
 
-	<h1 class="titulo_sede">-SEDES-</h1>
-	<h2 class="subtitulo_sede">Nuestras sedes</h2>
-	<div class="espacio">
-		<div class="cuadro" th:each="sede: ${sedes}">
-			<img class="portada" th:src="@{/images/{img} (img = ${sede.Imagen})}"
-				alt="Generic placeholder image" width="100%" height="250">
-			<div class="info">
-				<h5 th:text="'SALA: ' + ${sede.numSala}"></h5>
-				<h5 th:text="'SEDE: ' + ${sede.sedeNombre}"></h5>
-				<h5 th:text="'CIUDAD: ' + ${sede.ciudad}"></h5>
-				<h5 th:text="'DISTRITO: ' + ${sede.distrito}"></h5>
-				<h5 th:text="'CONFITERIA: ' + ${sede.confiteria}"></h5>
-			</div>
-		</div>
-	</div>
+		<tr class="table-light" th:each="sede : ${sedes}">
+			<td><img th:src="@{/images/{img} (img = ${sede.Imagen})}"
+				width="136" height="136"></td>
+			<td th:text="${sede.numSala}"></td>
+			<td th:text="${sede.sedeNombre}"></td>
+			<td th:text="${sede.ciudad}"></td>
+			<td th:text="${sede.distrito}"></td>
+			<td th:text="${sede.confiteria}"></td>
+			<td><span th:if="${sede.destacado ==1}"
+				class="badge text-bg-success">Sí</span> <span
+				th:unless="${sede.destacado ==1}" class="badge text-bg-danger">No</span>
+			</td>
 
-	<div class="container">
-		<a th:href="@{/Sede/sedeTabla.html}" class="badge text-bg-success">Ver
-			mas</a>
-	</div>
+			<td><a
+				th:href="@{/Sede/Detalle/view/{ID_SEDE} (ID_SEDE=${sede.ID_SEDE}) }"
+				class="btn btn-success">Detalle</a></td>
 
+			<td><a
+				th:href="@{/Sede/Detalle/delete (ID_SEDE=${sede.ID_SEDE}) }"
+				class="btn btn-danger">Borrar</a></td>
+
+		</tr>
+
+	</table>
 
 
 	<!-- INICIO FOOTER -->

@@ -1,0 +1,43 @@
+.espacio{
+	display: flex;
+	margin: 10em 17em 10em 17em;
+}
+
+.cuadro{
+	border-radius: 2%;
+	border: 0.6em solid #0075FF;
+	margin-left: 3em;
+	width: 400px;
+}
+
+
+.info{
+	padding: 1em;
+}
+
+.titulo_sede{
+	padding-top: 1em; 
+    color: #0075FF;
+    font-family: 'Teko';
+    text-align: center;
+    align-items: center;
+    font-size: 5.5em;
+}
+
+.subtitulo_sede{
+	padding-top: 0.4em;
+    color: black;
+    font-family: 'Teko';
+    text-align: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+.tittle_table{
+	padding-top: 1em; 
+    color: #0075FF;
+    font-family: 'Teko';
+    text-align: center;
+    align-items: center;
+    font-size: 5.5em;
+}

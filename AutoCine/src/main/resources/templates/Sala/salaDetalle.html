@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Drive | Detalles</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Teko:wght@400;600&display=swap"
+        rel="stylesheet"> <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" th:href="@{/css/detalle.css}">
+
+    <!-- LIBRERIA JQUERY DEL MENU -->
+    <script src="js/jquery.js"></script>
+    <!-- FIN DE LIBRERIA JQUERY -->
+</head>
+
+<body>
+    <br><br>
+    <!--INICIO SALA 1 Y 2-->
+    <article class="container ancho-article2">
+        <section class="row">
+            <h3 class="subtittle-sec">DETALLE: <span th:text="'SALA '+${sala.nombre}"></span></h3>
+        </section>
+        <section class="row card-peli container">
+            <section class="row col-xs-12 col-sm-12 col-md-12 cardd">
+                <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+                    <img th:src="@{/images/{img} (img = ${sala.imagen}) }" class="card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SALA <span th:text="${sala.nombre}"></span></h5>
+                    </div>
+                </section>
+                <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+                    <h3 class="subtittle-sec2">DESCR<span>IPCION</span></h3>
+                    <div class="card-body">
+                        <ul class="card-body2">
+                            <li><strong>Ubicacion: </strong>
+                                <ul>
+                                    <li th:text="${sala.ubicacion}"></li>
+                                </ul>
+                            </li>
+                            <li><strong>Capacidad: </strong>
+                                <ul>
+                                    <li th:text="${sala.capacidad}+' coches'"></li>
+                                </ul>
+                            </li>
+                            <li><strong>Caracteristicas: </strong>
+                                <ul >
+                                    <li th:text="${sala.caracteristicas1}"></li>
+                                    <li th:text="${sala.caracteristicas2}"></li>
+                                </ul>
+                            </li>
+                            <li><strong>Mas detalles: </strong>
+                                <ul>
+                                <li th:text="${sala.vermas}"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <section class="row row-boton">
+                            <a class="btn-peli" href="funciones.html">VER FUNCIONES</a>
+                          </section>
+                    </div>
+                </section>
+            </section>
+    </article>
+    <!--FIN SALA 1 Y 2-->
+    <!-- LIBRERIAS PARA EL MENÚ -->
+    <script src="js/headroom.min.js"></script>
+    <script src="js/menu-flex.js"></script>
+    <!-- FIN DE LIBRERIAS PARA EL MENÚ -->
+    <!-- JSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

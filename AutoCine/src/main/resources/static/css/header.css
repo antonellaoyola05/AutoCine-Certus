@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
 header{
     background-color: #F4C210;
     position: fixed;
@@ -100,6 +110,9 @@ header{
     }
 
 }
+
+
+
 
 .container-tittle-page{
     margin-top: 1.7em;

@@ -26,7 +26,7 @@ public class PeliculasController {
 	@Autowired
 	private IPeliculasService servicePeliculas;
 	
-	@GetMapping("/tablaPeliculas")
+	@GetMapping("/peliculasTabla.html")
 	public String mostrarTablaPelicula(Model model) {
 		List<Peliculas> listaPeliculas = servicePeliculas.buscarTodasPelicula();
 		model.addAttribute("peliculas", listaPeliculas);

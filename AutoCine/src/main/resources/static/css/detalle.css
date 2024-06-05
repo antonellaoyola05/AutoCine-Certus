@@ -1,0 +1,95 @@
+.ancho-article2{
+    max-width: 1500px;
+}
+.subtittle-sec{
+    text-align: center;
+    color: #F4C210;
+    font-family: 'Teko';
+    font-size: 4em;
+    font-weight: bold;
+    margin: .4em auto;
+    padding-left: .7em;
+}
+.subtittle-sec span{
+    color: #0075FF;
+}
+
+
+
+.card-peli{
+    margin: auto;
+    margin-bottom: 3em;
+    max-width: 100%;
+}
+.card-title{ 
+    color: #0075FF;
+    font-family: 'Teko';
+    font-size: 4em;
+    font-weight: bold;
+}
+.card-title span{
+    color: #000000;
+}
+.card-img{
+    padding: 1em 0;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.card-body{
+    text-align: center;
+    padding: 0;
+}
+.card-body2{
+    text-align: justify;
+}
+.cardd{
+    width: 1100px;
+    background-color: #f1f1f1;
+    border: #0075FF solid .4em;
+    border-radius: 0.5em;
+    align-items: center;
+    margin: auto;
+}
+.espacio{
+    padding: 2em .7em;
+    margin: 0;
+}
+.subtittle-sec2{
+    color: #0075FF;
+    font-family: 'Teko';
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+.subtittle-sec2 span{
+    color: #000000;
+}
+ul{
+    font-size: 1.05em;
+    font-family: 'Raleway';
+    list-style-type: none;
+    margin: 0 0 0 1em;
+    padding: 0 0 .5em 0;
+}
+
+.row-boton{
+    width: 80%;
+    margin:auto;
+}
+.btn-peli{
+    padding: .3em;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Teko';
+    font-weight: bold;
+    font-size: 2em;
+    border: #0075FF solid 4px;
+    text-align: center;
+}
+.btn-peli:hover{
+    background-color: #0075FF;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+}

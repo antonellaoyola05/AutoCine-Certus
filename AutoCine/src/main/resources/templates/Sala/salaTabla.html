@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Movie Drive | Listado de Salas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container" >
+		<h1>Listado de Salas</h1>
+		<table class="table">
+			<tr class="table-dark">
+				<th>Logo</th>
+				<th>Id</th>
+				<th>Nombre</th>
+				<th>Ubicacion</th>
+				<th>Capacidad</th>
+				<th>Caracteristicas</th>
+				<th>Destacado</th>
+				<th>Detalle</th>
+				<th>Eliminar</th>
+			</tr>
+			<tr class="table-primary" th:each="sala : ${salas}">
+				<td>
+					<img th:src="@{/images/{img} (img = ${sala.imagen}) }" width="136" height="136">
+				</td>
+				<td th:text="${sala.id}"></td>
+				<td th:text="${sala.nombre}"></td>
+				<td th:text="${sala.ubicacion}"></td>
+				<td th:text="${sala.capacidad}+' coches'"></td>
+				<td>
+					<p th:text="${sala.caracteristicas1}"></p>
+					<p th:text="${sala.caracteristicas2}"></p>
+				</td>  
+				<td>
+					<span th:if="${sala.destacado == 1}" class="badge text-bg-success">Si</span>
+					<span th:unless="${sala.destacado == 1}" class="badge text-bg-danger">No</span>
+				</td>
+				
+				<td>
+					<a th:href="@{/salas/view/{id} (id=${sala.id}) }" class="btn btn-success">Ver Detalle</a>
+				</td>
+				<td>
+					<a th:href="@{/salas/delete(id=${sala.id}) }" class="btn btn-danger">Borrar</a>
+				</td>
+				
+			</tr>
+		</table>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

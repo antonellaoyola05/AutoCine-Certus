@@ -18,41 +18,26 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/header.css">
+<!-- Custom styles for this template -->
+<link th:href="@{/bootstrap/css/jumbotron.css}" rel="stylesheet">
+<link th:href="@{/bootstrap/css/sticky-footer-navbar.css}">
+<!-- CSS -->
 
-  <!-- LIBRERIA JQUERY DEL MENU -->
-  <script src="js/jquery.js"></script>
-  <!-- FIN DE LIBRERIA JQUERY -->
+<link th:href="@{/css/header.css}" rel="stylesheet">
+<link th:href="@{/css/footer.css}" rel="stylesheet">
+<link th:href="@{/css/estilosSedes.css}" rel="stylesheet">
+<link rel="stylesheet" th:href="@{/css/salas.css}">
+
+<!-- LIBRERIA JQUERY DEL MENU -->
+<script th:src="@{/js/jquery.js}"></script>
+<!-- FIN DE LIBRERIA JQUERY -->
 </head>
-  <!-- INICIO HEADER -->
-  <header id="header">
-    <nav class="menu">
-      <div class="logo">
-        <a href="#" class="logito">
-          <img src="img/logo.png" alt="" class="img-fluid img-logo">
-        </a>
-        <a href="#" class="marca">MOVIE DRIVE</a>
-        <a href="#" class="btn-menu" id="btn-menu">
-          <i class="fa-solid fa-bars icono-menu"></i>
-        </a>
-      </div>
-      <div class="enlaces" id="enlaces">
-        <a href="index.html" class="links">INICIO</a>
-        <a href="#" class="here">CATEGORIAS</a>
-        <a href="funciones.html" class="links">FUNCIONES</a>
-        <a href="peliculas.html" class="links">PELICULAS</a>
-        <a href="salas.html" class="links">SALAS</a>
-        <a href="/sedesPe/sede" class="links">SEDES</a>
-        <a href="confiteria.html" class="links">CONFITERIA</a>
-      </div>
-    </nav>
-    <div class="linea"></div>
-  </header>
-  <!-- FIN HEADER -->
+	<!-- INICIO HEADER -->
+	<header th:insert="fragments/menu :: menu-principal"> </header>
+	<!-- FIN HEADER -->
 <body>
 
-
+<br><br>
 	<main role="main">
       <hr>
       <div class="container"> 
@@ -85,58 +70,16 @@
 
       </div>
     </main>
-	
-	
+	<br>
 	<!-- INICIO FOOTER -->
-  <footer class="footer">
-    <section class="container footer-container">
-      <section class="row">
-        <section class="col-xs-12 col-sm-12 col-md-4 border-right">
-          <h2>¿QUIENES SOMOS?</h2>
-          <p class="p-footer">Somos un apasionado grupo de estudiantes de CERTUS del quinto ciclo. Hemos creado esta
-            página con dedicación y entusiasmo para compartir nuestra pasión por el cine y la comodidad de poder verlo
-            desde nuestro propios asientos. Nuestra mision es proporconarte una gran variedad de peliculas y comodos
-            espacios para disfrutar de lamejor manera estas obras de arte. ¡Bienvenido a MOVIE DRIVE!</p>
-        </section>
-        <section class="col-xs-12 col-sm-12 col-md-4 border-right">
-          <h2 class="c2">ENLACES RAPIDOS</h2>
-          <div>
-            <a href="index.html" class="here-footer">INICIO</a>
-            <a href="#" class="enlaces-footer">CATEGORIAS</a>
-            <a href="funciones.html" class="enlaces-footer">FUNCIONES</a>
-            <a href="peliculas.html" class="enlaces-footer">PELICULAS</a>
-            <a href="salas.html" class="enlaces-footer">SALAS</a>
-            <a href="/sedesPe/sede" class="enlaces-footer">SEDES</a>
-            <a href="confiteria.html" class="enlaces-footer">CONFITERIA</a>
-          </div>
-        </section>
-        <section class="col-xs-12 col-sm-12 col-md-4">
-          <h2 class="c2">INFORMACION DE CONTACTO</h2>
-          <div>
-            <a href="https://wa.link/odayyx" class="contacto-footer" target="_blank"><i
-                class="fa-brands fa-whatsapp icono-footer" style="color: #25D366;"></i>WHASTAPP</a>
-            <a href="#" class="contacto-footer" target="_blank"><i class="fa-brands fa-facebook icono-footer"
-                style="color: #4267B2;"></i>FACEBOOK</a>
-            <a href="#" class="contacto-footer" target="_blank"><i class="fa-brands fa-twitter icono-footer"
-                style="color: #1DA1F2;"></i>TWITTER</a>
-            <a href="#" class="contacto-footer" target="_blank"><i class="fa-brands fa-instagram icono-footer"
-                style="color: #C13584;"></i>INSTAGRAM</a>
-          </div>
-        </section>
-      </section>
-      <section class="row final-foo">
-        <div class="linea2"></div>
-      </section>
-      <section class="row">
-        <p class="final-p">Movie Driver © 2024 | Todos los derechos de autor reservados</p>
-      </section>
-    </section>
-  </footer>
-  <!-- FIN FOOTER -->
-  <!-- LIBRERIAS PARA EL MENÚ -->
-  <script src="js/headroom.min.js"></script>
-  <script src="js/menu-flex.js"></script>
-  <!-- FIN DE LIBRERIAS PARA EL MENÚ -->
+	<footer th:insert="fragments/footer :: pie-pagina" class="footer">
+	</footer>
+	<!-- FIN FOOTER -->
+	<!-- FIN FOOTER -->
+	<!-- LIBRERIAS PARA EL MENÚ -->
+	<script th:src="@{/js/headroom.min.js}"></script>
+	<script th:src="@{/js/menu-flex.js}"></script>
+	<!-- FIN DE LIBRERIAS PARA EL MENÚ -->
   <!-- JSS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

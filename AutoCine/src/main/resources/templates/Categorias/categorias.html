@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Drive | Categorias</title>
+  <link rel="shortcut icon" th:href="@{/logo.png}">
+  <!-- ICONOS -->
+  <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Teko:wght@400;600&display=swap"
+    rel="stylesheet"> <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" th:href="@{/css/header.css}">
+  <link rel="stylesheet" th:href="@{/css/categorias.css}">
+    <link rel="stylesheet" th:href="@{/css/footer.css}">
+  
+</head>
+
+<body>
+  <!-- INICIO HEADER -->
+  <header th:insert="fragments/menu :: menu-principal">
+    </header>
+  <!-- FIN HEADER -->
+
+  <!-- INICIO TITULO -->
+  <div class="container-tittle-page">
+    <h1 class="title-page">- CATEGORIAS -</h1>
+    <div class="line-title-page "></div>
+    <nav class="menu">
+      <div class="enlaces2" id="enlaces2">
+        <a href="#accion" class="links">ACCION</a>
+        <a href="#comedia" class="links">COMEDIA</a>
+        <a href="#drama" class="links">DRAMA</a>
+        <a href="#terror" class="links">TERROR</a>
+        <a href="#ciencia" class="links">CIENCIA FICCION</a>
+        <a href="#animacion" class="links">ANIMACION</a>
+        <a href="#romance" class="links">ROMANCE</a>
+      </div>
+    </nav>
+  </div>
+  <!-- FIN TITULO -->
+
+  <!-- INICIO ACCION -->
+  <article class="container ancho-article2">
+    <section class="row">
+      <h3 class="subtittle-sec">CATEGORIA <span>ACCION</span></h3>
+    </section>
+    <section class="row">
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-img2">
+        <img class="img-fluid img-section2" th:src="@{/images/accion.jpg}" alt="">
+      </section>
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-par2">
+        <p class="par-index">Las películas de acción están llenas de adrenalina y emociones intensas, perfectas para los
+          amantes de la aventura. Estas cintas suelen incluir peleas espectaculares, persecuciones a alta velocidad y
+          explosiones impresionantes. Los héroes de acción enfrentan desafíos extraordinarios y enemigos formidables,
+          garantizando un espectáculo emocionante de principio a fin. Prepárate para vivir una experiencia trepidante
+          que te mantendrá al borde de tu asiento.</p>
+      </section>
+    </section>
+    <!--INICIO CARD-->
+    <br>
+    <section class="row">
+      <h3 class="subtittle-sec2">NUESTRAS <span>PELIS</span></h3>
+    </section>
+    <section class="row card-peli">
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img th:src="@{/images/peli_accion1.jpg}" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">JOHN <span>WICK 4</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img th:src="@{/images/peli_accion2.jpg}" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">FAST <span>9</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img th:src="@{/images/peli_accion3.jpg}" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BHO<span>LAA</span></h5>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="row row-boton">
+      <a class="btn-peli" href="peliculas.html" id="comedia">DESCUBRIR MAS</a>
+    </section>
+    <br>
+    <!--FIN CARD-->
+  </article>
+  <!-- FIN ACCION -->
+
+  <!-- INICIO COMEDIA -->
+  <article class="container ancho-article3">
+    <section class="row">
+      <h3 class="subtittle-sec3">CATEGORIA <span>COMEDIA</span></h3>
+    </section>
+    <section class="row">
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-par3">
+        <p class="par-index">Las películas de comedia están diseñadas para hacerte reír y olvidar tus preocupaciones.
+          Con situaciones cómicas, diálogos ingeniosos y personajes entrañables, estas películas son perfectas para
+          disfrutar en compañía de amigos y familiares. Ya sea a través del humor absurdo, la sátira o las comedias
+          románticas, estas películas garantizan risas y buen humor. Déjate llevar por la diversión y disfruta de un
+          rato agradable lleno de carcajadas.</p>
+      </section>
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-img3">
+        <img class="img-fluid img-section3" src="images/comedia.jpg" alt="">
+      </section>
+    </section>
+    <!--INICIO CARD-->
+    <br>
+    <section class="row">
+      <h3 class="subtittle-sec2">NUESTRAS <span>PELIS</span></h3>
+    </section>
+    <section class="row card-peli">
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_comedia1.jpeg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">LITTLE <span>MAN</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_comedia2.webp" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">INFIL<span>TRADOS</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_comedia3.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">WRONG <span>MISSY</span></h5>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="row row-boton">
+      <a class="btn-peli" href="peliculas.html" id="drama">DESCUBRIR MAS</a>
+    </section>
+    <br>
+    <!--FIN CARD-->
+  </article>
+  <!-- FIN COMEDIA -->
+
+  <!-- INICIO DRAMA -->
+  <article class="container ancho-article2">
+    <section class="row">
+      <h3 class="subtittle-sec">CATEGORIA <span>DRAMA</span></h3>
+    </section>
+    <section class="row">
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-img2">
+        <img class="img-fluid img-section2" src="images/drama.jpg" alt="">
+      </section>
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-par2">
+        <p class="par-index">Las películas de drama se centran en historias emocionales y profundas, explorando las
+          complejidades de la vida humana. Estos filmes suelen abordar temas serios y realistas, como las relaciones
+          interpersonales, los conflictos internos y las luchas personales. Con actuaciones poderosas y narrativas
+          conmovedoras, las películas de drama te invitan a reflexionar y conectarte con los personajes en un nivel más
+          profundo. Prepárate para una experiencia cinematográfica emotiva y enriquecedora.</p>
+      </section>
+    </section>
+    <!--INICIO CARD-->
+    <br>
+    <section class="row">
+      <h3 class="subtittle-sec2">NUESTRAS <span>PELIS</span></h3>
+    </section>
+    <section class="row card-peli">
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_drama1.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">INTO<span>CABLE</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_drama2.webp" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">TITA<span>NIC</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_drama3.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">EL <span>NIÑO</span></h5>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="row row-boton">
+      <a class="btn-peli" href="peliculas.html"  id="terror">DESCUBRIR MAS</a>
+    </section>
+    <br>
+    <!--FIN CARD-->
+  </article>
+  <!-- FIN DRAMA -->
+
+  <!-- INICIO TERROR -->
+  <article class="container ancho-article3">
+    <section class="row">
+      <h3 class="subtittle-sec3">CATEGORIA <span>TERROR</span></h3>
+    </section>
+    <section class="row">
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-par3">
+        <p class="par-index">Las películas de terror están diseñadas para asustar y provocar tensión, ideales para los
+          valientes que disfrutan de un buen susto. Estas cintas exploran el lado oscuro del miedo humano, presentando
+          criaturas sobrenaturales, asesinos en serie y escenarios inquietantes. Con efectos especiales impactantes y
+          una atmósfera de suspense, las películas de terror te harán saltar de tu asiento y mantenerte en vilo hasta el
+          final. ¿Te atreves a enfrentar tus peores miedos?</p>
+      </section>
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-img3">
+        <img class="img-fluid img-section3" src="images/terror.jpg" alt="">
+      </section>
+    </section>
+    <!--INICIO CARD-->
+    <br>
+    <section class="row">
+      <h3 class="subtittle-sec2">NUESTRAS <span>PELIS</span></h3>
+    </section>
+    <section class="row card-peli">
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_terror1.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ANA<span>BELLE</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_terror2.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">EL <span>EXORCISTA</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_terror3.jpg_large" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">LA <span>LLORONA</span></h5>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="row row-boton">
+      <a class="btn-peli" href="peliculas.html" id="ciencia">DESCUBRIR MAS</a>
+    </section>
+    <br>
+    <!--FIN CARD-->
+  </article>
+  <!-- FIN TERROR -->
+
+  <!-- INICIO CIENCIA -->
+  <article class="container ancho-article2">
+    <section class="row">
+      <h3 class="subtittle-sec">CATEGORIA <span>CIENCIA FICCION</span></h3>
+    </section>
+    <section class="row">
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-img2">
+        <img class="img-fluid img-section2" src="images/ciencia.webp" alt="">
+      </section>
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-par2">
+        <p class="par-index">Las películas de ciencia ficción te transportan a mundos futuristas y universos paralelos, explorando conceptos avanzados y tecnologías asombrosas. Estas cintas abordan temas como los viajes espaciales, la inteligencia artificial y las dimensiones alternativas, ofreciendo una visión fascinante de lo que podría ser el futuro. Con tramas intrigantes y efectos visuales impresionantes, las películas de ciencia ficción estimulan la imaginación y te hacen cuestionar la realidad.</p>
+      </section>
+    </section>
+    <!--INICIO CARD-->
+    <br>
+    <section class="row">
+      <h3 class="subtittle-sec2">NUESTRAS <span>PELIS</span></h3>
+    </section>
+    <section class="row card-peli">
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_ciencia1.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ROGUE <span>ONE</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_ciencia2.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">AVA<span>TAR</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_ciencia3.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">AVEN<span>GERS</span></h5>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="row row-boton">
+      <a class="btn-peli" href="peliculas.html" id="animacion">DESCUBRIR MAS</a>
+    </section>
+    <br>
+    <!--FIN CARD-->
+  </article>
+  <!-- FIN CIENCIA -->
+
+  <!-- INICIO ANIMACION -->
+  <article class="container ancho-article3">
+    <section class="row">
+      <h3 class="subtittle-sec3">CATEGORIA <span>ANIMACION</span></h3>
+    </section>
+    <section class="row">
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-par3">
+        <p class="par-index">Las películas de animación son un deleite visual que combina creatividad y narrativa para todas las edades. Estas cintas, realizadas mediante técnicas como el dibujo animado, CGI o stop-motion, presentan historias encantadoras y personajes inolvidables. Con temas que van desde la aventura hasta la amistad, las películas de animación ofrecen entretenimiento para toda la familia, dejando una huella duradera en el corazón de los espectadores.</p>
+      </section>
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-img3">
+        <img class="img-fluid img-section3" src="images/animacion.webp" alt="">
+      </section>
+    </section>
+    <!--INICIO CARD-->
+    <br>
+    <section class="row">
+      <h3 class="subtittle-sec2">NUESTRAS <span>PELIS</span></h3>
+    </section>
+    <section class="row card-peli">
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_accion1.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">JOHN <span>WICK 4</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_accion1.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">JOHN <span>WICK 4</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_accion1.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">JOHN <span>WICK 4</span></h5>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="row row-boton">
+      <a class="btn-peli" href="peliculas.html"  id="romance">DESCUBRIR MAS</a>
+    </section>
+    <br>
+    <!--FIN CARD-->
+  </article>
+  <!-- FIN ANIMACION -->
+
+  <!-- INICIO ROMANCE -->
+  <article class="container ancho-article2">
+    <section class="row">
+      <h3 class="subtittle-sec">CATEGORIA <span>ROMANCE</span></h3>
+    </section>
+    <section class="row">
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-img2">
+        <img class="img-fluid img-section2" src="images/romance.jpeg" alt="">
+      </section>
+      <section class="col-xs-12 col-sm-12 col-md-6 sec-par2">
+        <p class="par-index">Las películas de romance se centran en las historias de amor y las relaciones sentimentales, ideal para los soñadores y los románticos. Estas cintas exploran la conexión emocional entre los personajes, sus desafíos y triunfos en el camino del amor verdadero. Con momentos tiernos y apasionados, las películas de romance te harán suspirar y creer en el poder del amor. Perfectas para una cita o una noche tranquila, estas historias tocan el corazón.
+
+        </p>
+      </section>
+    </section>
+    <!--INICIO CARD-->
+    <br>
+    <section class="row">
+      <h3 class="subtittle-sec2">NUESTRAS <span>PELIS</span></h3>
+    </section>
+    <section class="row card-peli">
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_accion1.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">JOHN <span>WICK 4</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_accion1.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">JOHN <span>WICK 4</span></h5>
+          </div>
+        </div>
+      </section>
+      <section class="col--xs-12 col-sm-12 col-md-4">
+        <div class="card mb-3 cardd">
+          <img src="images/peli_accion1.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">JOHN <span>WICK 4</span></h5>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="row row-boton">
+      <a class="btn-peli" href="peliculas.html">DESCUBRIR MAS</a>
+    </section>
+    <br>
+    <!--FIN CARD-->
+  </article>
+  <!-- FIN ROMANCE -->
+
+  <!-- INICIO FOOTER -->
+  <footer th:insert="fragments/footer :: pie-pagina" class="footer">
+  </footer>
+  <!-- FIN FOOTER -->
+  <!-- JSS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

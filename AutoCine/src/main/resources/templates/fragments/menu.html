@@ -1,0 +1,25 @@
+<!-- INICIO HEADER -->
+  <div th:fragment="menu-principal">
+<nav class="menu">
+			<div class="logo">
+				<a href="#" class="logito"> <img th:src="@{/images/logo.png}"
+					alt="" class="img-fluid img-logo" height="200px" width="180px">
+				</a>
+				<!--  <a href="#" class="marca">MOVIE DRIVE</a>-->
+				<a href="#" class="btn-menu" id="btn-menu"> <i
+					class="fa-solid fa-bars icono-menu"></i>
+				</a>
+			</div>
+			<div class="enlaces" id="enlaces">
+				<a th:href="@{/}" class="links">INICIO</a> 
+				<a th:href="@{/categorias.html}" class="links">CATEGORIAS</a>
+				<a th:href="@{/funciones.html}" class="links">FUNCIONES</a> 
+				<a th:href="@{/peliculas.html}" class="links">PELICULAS</a>
+				<a th:href="@{/sala.html}" class="links">SALAS</a> 
+				<a th:href="@{/sede.html}" class="links">SEDES</a>
+				<a th:href="@{/confiteria.html}" class="links">CONFITERIA</a>
+			</div>
+		</nav> 
+    <div class="linea"></div>
+    </div>
+  <!-- FIN HEADER -->

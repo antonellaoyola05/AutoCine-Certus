@@ -4,12 +4,8 @@
 *{
 	padding : 0;
 	margin : 0;
-	box-sizing: border-box;
 } 
 
-body{
-    background-color: #7e1515; 
-}
 
 .titulo_funcion{
 	padding-top: 1em; 
@@ -120,108 +116,3 @@ body{
 	font-size: 5em;
 }
 
-/* INICIO FOOTER */
-footer{
-    padding-top: 5em;
-    background-color: #F4C210;
-    color: #000000;
-}
-.footer-container{
-    max-width: 1400px;
-}
-footer hr{
-    width: 100%;
-}
-footer h2{
-    font-size: 2em;
-    color: #0075FF;
-    font-family: 'Teko';
-    font-weight: 500;
-}
-footer .c2{
-    padding-left: 1.3em;
-}
-.border-right {
-    border-right: 2px solid #0075FF;
-}
-.p-footer{
-    padding-right: 1em;
-    font-weight: bold;
-    font-family: 'Raleway';
-    text-align: center;
-}
-.here-footer{
-    display: block;
-    padding-left: 2em;
-    text-decoration: none;
-    font-family: 'Teko';
-    font-size: 1.4em;
-    color:#0075FF;
-	text-align: center;
-}
-.here-footer:hover{
-    color:#0075FF;
-}
-.enlaces-footer{
-    display: block;
-    padding-left: 2em;
-    text-decoration: none;
-    font-family: 'Teko';
-    font-size: 1.4em;
-    color: #000000;
-	text-align: center;
-}
-.enlaces-footer:hover{
-    color: #0075FF;
-}
-.contacto-footer{
-    display: block;
-    padding-left: 2em;
-    text-decoration: none;
-    font-family: 'Teko';
-    font-size: 1.4em;
-    color: #000000;
-	text-align: center;
-}
-.contacto-footer:hover{
-    color: #0075FF;
-}
-.icono-footer{
-    font-size: 1.2em;
-    padding-right: 1em;
-    padding-bottom: 20px;
-	text-align: center;
-}
-.final-foo{
-    margin-top: 3em;
-}
-.linea2{
-    height: .2em; 
-    background-color: #0075FF;
-    margin-bottom: 1.3em;
-}
-.final-p{
-    text-align: center;
-    font-family: 'Teko';
-    font-size: 1.6em;
-}
-@media screen and (max-width: 800px){
-    footer{
-        text-align: center;
-		background-color: #F4C210;
-    }
-    footer .c2{
-        padding-left: 1px;
-    }
-    .p-footer{
-        padding-right: 1px;
-    }
-    .here-footer, .enlaces-footer{
-        padding-left: 1px;
-    }
-    .contacto-footer{
-        padding-left: 1px;
-        text-align: center;
-    }
-}
-/* FIN FOOTER */

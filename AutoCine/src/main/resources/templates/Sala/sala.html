@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Drive | Salas</title>
+  <link rel="shortcut icon" href="img/logo.png">
+  <!-- ICONOS -->
+  <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Teko:wght@400;600&display=swap"
+    rel="stylesheet"> 
+    <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- Bootstrap core CSS -->
+<link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link th:href="@{/bootstrap/css/jumbotron.css}" rel="stylesheet"> 
+<link th:href="@{/bootstrap/css/sticky-footer-navbar.css}">
+  <!-- CSS -->
+  
+<link th:href="@{/css/header.css}" rel="stylesheet">
+<link th:href="@{/css/footer.css}" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/salas.css}">
+
+  <!-- LIBRERIA JQUERY DEL MENU -->
+<script th:src="@{/js/jquery.js}"></script>
+  <!-- FIN DE LIBRERIA JQUERY -->
+</head>
+
+<body>
+  <!-- INICIO HEADER -->
+  <header th:insert="fragments/menu :: menu-principal">
+    </header>
+  <!-- FIN HEADER -->
+
+  <!-- INICIO TITULO -->
+  <div class="container-tittle-page">
+    <h1 class="title-page">- SALAS -</h1>
+    <div class="line-title-page "></div>
+  </div>
+  <!-- FIN TITULO -->
+  <br>
+
+  <!--INICIO SALA 1 Y 2-->
+  <article class="container ancho-article2">
+    <section class="row">
+      <h3 class="subtittle-sec">NUESTRAS <span>SALAS</span> EXCLUSIVAS</h3>
+    </section>
+    <section class="row card-peli container">
+      <section class="row col-xs-12 col-sm-12 col-md-6 cardd" >
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+            <img src="images/sala1.jpg" class="card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SALA <span>VIP</span></h5>
+            </div>
+        </section>
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+          <h3 class="subtittle-sec2">DESCR<span>IPCION</span></h3>
+            <div class="card-body">
+              <ul class="card-body2">
+                <li><strong>Ubicacion: </strong>
+                  <ul>
+                    <li>Extremo norte, cerca del área de juegos para niños.</li>
+                  </ul>
+                </li>
+                <li><strong>Capacidad: </strong>
+                  <ul>
+                    <li> 80 coches</li>
+                  </ul>
+                </li>
+                <li><strong>Caracteristicas: </strong>
+                  <ul>
+                    <li>Pantalla: 15 x 8 metros, Full HD</li>
+                    <li>Servicios: Snack bar, baños, zona de juegos para niños</li>
+                  </ul>
+                </li>
+              </ul>
+              <section class="row row-boton">
+                <a class="btn-peli" href="funciones.html">VER FUNCIONES</a>
+              </section>
+            </div>
+        </section>
+      </section>
+      <section class="row col-xs-12 col-sm-12 col-md-6 cardd">
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+            <img src="images/sala2.webp" class="card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SALA <span>DELUXE</span></h5>
+            </div>
+        </section>
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+          <h3 class="subtittle-sec2">DESCR<span>IPCION</span></h3>
+            <div class="card-body">
+              <ul class="card-body2">
+                <li><strong>Ubicacion: </strong>
+                  <ul>
+                    <li>Sector este, junto al área de restaurantes.</li>
+                  </ul>
+                </li>
+                <li><strong>Capacidad: </strong>
+                  <ul>
+                    <li> 100 coches</li>
+                  </ul>
+                </li>
+                <li><strong>Caracteristicas: </strong>
+                  <ul>
+                    <li>Pantalla: 20 x 10 metros, 4K</li>
+                    <li>Servicios: Restaurante, Baños, Zona lounge</li>
+                  </ul>
+                </li>
+              </ul>
+              <section class="row row-boton">
+                <a class="btn-peli" href="funciones.html">VER FUNCIONES</a>
+              </section>
+            </div>
+        </section>
+      </section>
+  </article>
+  <!--FIN SALA 1 Y 2-->
+  <!--INICIO SALA 3 Y 4-->
+  <article class="container ancho-article2">
+    <section class="row card-peli container">
+      <section class="row col-xs-12 col-sm-12 col-md-6 cardd">
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+            <img src="images/sala3.jpg" class="card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SALA <span>CLASICA</span></h5>
+            </div>
+        </section>
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+          <h3 class="subtittle-sec2">DESCR<span>IPCION</span></h3>
+            <div class="card-body">
+              <ul class="card-body2">
+                <li><strong>Ubicacion: </strong>
+                  <ul>
+                    <li>Centro del autocine, acceso principal.</li>
+                  </ul>
+                </li>
+                <li><strong>Capacidad: </strong>
+                  <ul>
+                    <li> 120 coches</li>
+                  </ul>
+                </li>
+                <li><strong>Caracteristicas: </strong>
+                  <ul>
+                    <li>Pantalla: 12 x 6 metros, HD</li>
+                    <li>Servicios: Snack bar, Baños, Tienda de recuerdos</li>
+                  </ul>
+                </li>
+              </ul>
+              <section class="row row-boton">
+                <a class="btn-peli" href="funciones.html">VER FUNCIONES</a>
+              </section>
+            </div>
+        </section>
+      </section>
+      <section class="row col-xs-12 col-sm-12 col-md-6 cardd">
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+            <img src="images/sala4.jpeg" class="card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SALA <span>RETRO</span></h5>
+            </div>
+        </section>
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+          <h3 class="subtittle-sec2">DESCR<span>IPCION</span></h3>
+            <div class="card-body">
+              <ul class="card-body2">
+                <li><strong>Ubicacion: </strong>
+                  <ul>
+                    <li>Sector oeste, cerca del área de picnic.</li>
+                  </ul>
+                </li>
+                <li><strong>Capacidad: </strong>
+                  <ul>
+                    <li> 90 coches</li>
+                  </ul>
+                </li>
+                <li><strong>Caracteristicas: </strong>
+                  <ul>
+                    <li>Pantalla: 10 x 5 metros, HD</li>
+                    <li>Servicios: Snack bar, Baños, Zona de picnic</li>
+                  </ul>
+                </li>
+              </ul>
+              <section class="row row-boton">
+                <a class="btn-peli" href="funciones.html">VER FUNCIONES</a>
+              </section>
+            </div>
+        </section>
+      </section>
+  </article>
+  <!--FIN SALA 3 Y 4-->
+  <!--INICIO SALA 5 Y 6-->
+  <article class="container ancho-article2">
+    <section class="row card-peli container">
+      <section class="row col-xs-12 col-sm-12 col-md-6 cardd">
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+            <img src="images/sala5.jpg" class="card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SALA <span>FAMILIAR</span></h5>
+            </div>
+        </section>
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+          <h3 class="subtittle-sec2">DESCR<span>IPCION</span></h3>
+            <div class="card-body">
+              <ul class="card-body2">
+                <li><strong>Ubicacion: </strong>
+                  <ul>
+                    <li>Cerca del área de juegos para niños.</li>
+                  </ul>
+                </li>
+                <li><strong>Capacidad: </strong>
+                  <ul>
+                    <li> 150 coches</li>
+                  </ul>
+                </li>
+                <li><strong>Caracteristicas: </strong>
+                  <ul>
+                    <li>Pantalla: 18 x 9 metros, Full HD</li>
+                    <li>Servicios: Snack bar, Baños, Área de juegos</li>
+                  </ul>
+                </li>
+              </ul>
+              <section class="row row-boton">
+                <a class="btn-peli" href="funciones.html">VER FUNCIONES</a>
+              </section>
+            </div>
+        </section>
+      </section>
+      <section class="row col-xs-12 col-sm-12 col-md-6 cardd">
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+            <img src="images/sala6.jpg" class="card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SALA <span>ROMANTICA</span></h5>
+            </div>
+        </section>
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+          <h3 class="subtittle-sec2">DESCR<span>IPCION</span></h3>
+            <div class="card-body">
+              <ul class="card-body2">
+                <li><strong>Ubicacion: </strong>
+                  <ul>
+                    <li>Sector sur, zona tranquila.</li>
+                  </ul>
+                </li>
+                <li><strong>Capacidad: </strong>
+                  <ul>
+                    <li> 70 coches</li>
+                  </ul>
+                </li>
+                <li><strong>Caracteristicas: </strong>
+                  <ul>
+                    <li>Pantalla: 14 x 7 metros, Full HD</li>
+                    <li>Servicios: Snack bar, Baños, Zona de parejas</li>
+                  </ul>
+                </li>
+              </ul>
+              <section class="row row-boton">
+                <a class="btn-peli" href="funciones.html">VER FUNCIONES</a>
+              </section>
+            </div>
+        </section>
+      </section>
+  </article>
+  <!--FIN SALA 5 Y 6-->
+  <!--INICIO SALA 7 Y 8-->
+  <article class="container ancho-article2">
+    <section class="row card-peli container">
+      <section class="row col-xs-12 col-sm-12 col-md-6 cardd">
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+            <img src="images/sala7.jpg" class="card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SALA <span>AVENTURA</span></h5>
+            </div>
+        </section>
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+          <h3 class="subtittle-sec2">DESCR<span>IPCION</span></h3>
+            <div class="card-body">
+              <ul class="card-body2">
+                <li><strong>Ubicacion: </strong>
+                  <ul>
+                    <li>Sector noreste, cerca del lago.</li>
+                  </ul>
+                </li>
+                <li><strong>Capacidad: </strong>
+                  <ul>
+                    <li> 110 coches</li>
+                  </ul>
+                </li>
+                <li><strong>Caracteristicas: </strong>
+                  <ul>
+                    <li>Pantalla: 16 x 8 metros, 4K</li>
+                    <li>Servicios: Snack bar, Baños, Área de aventuras</li>
+                  </ul>
+                </li>
+              </ul>
+              <section class="row row-boton">
+                <a class="btn-peli" href="funciones.html">VER FUNCIONES</a>
+              </section>
+            </div>
+        </section>
+      </section>
+      <section class="row col-xs-12 col-sm-12 col-md-6 cardd">
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+            <img src="images/sala8.jpg" class="card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SALA <span>CIENCIA FICCION</span></h5>
+            </div>
+        </section>
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+          <h3 class="subtittle-sec2">DESCR<span>IPCION</span></h3>
+            <div class="card-body">
+              <ul class="card-body2">
+                <li><strong>Ubicacion: </strong>
+                  <ul>
+                    <li>Sector sur, cerca del planetario.</li>
+                  </ul>
+                </li>
+                <li><strong>Capacidad: </strong>
+                  <ul>
+                    <li> 100 coches</li>
+                  </ul>
+                </li>
+                <li><strong>Caracteristicas: </strong>
+                  <ul>
+                    <li>Pantalla: 15 x 8 metros, 4K</li>
+                    <li>Servicios: Snack bar, Baños, Tienda temática</li>
+                  </ul>
+                </li>
+              </ul>
+              <section class="row row-boton">
+                <a class="btn-peli" href="funciones.html">VER FUNCIONES</a>
+              </section>
+            </div>
+        </section>
+      </section>
+  </article>
+  <!--FIN SALA 7 Y 8-->
+  <!--INICIO SALA 9 Y 10-->
+  <article class="container ancho-article2">
+    <section class="row card-peli container">
+      <section class="row col-xs-12 col-sm-12 col-md-6 cardd">
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+            <img src="images/sala9.jpg" class="card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SALA <span>ANIMADA</span></h5>
+            </div>
+        </section>
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+          <h3 class="subtittle-sec2">DESCR<span>IPCION</span></h3>
+            <div class="card-body">
+              <ul class="card-body2">
+                <li><strong>Ubicacion: </strong>
+                  <ul>
+                    <li>Sector centro-oeste, área infantil.</li>
+                  </ul>
+                </li>
+                <li><strong>Capacidad: </strong>
+                  <ul>
+                    <li> 130 coches</li>
+                  </ul>
+                </li>
+                <li><strong>Caracteristicas: </strong>
+                  <ul>
+                    <li>Pantalla: 17 x 9 metros, Full HD</li>
+                    <li>Servicios: Snack bar, Baños, Zona de juegos</li>
+                  </ul>
+                </li>
+              </ul>
+              <section class="row row-boton">
+                <a class="btn-peli" href="funciones.html">VER FUNCIONES</a>
+              </section>
+            </div>
+        </section>
+      </section>
+      <section class="row col-xs-12 col-sm-12 col-md-6 cardd">
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+            <img src="images/sala10.jpg" class="card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SALA <span>TERROR</span></h5>
+            </div>
+        </section>
+        <section class="col-xs-12 col-sm-12 col-md-6 espacio">
+          <h3 class="subtittle-sec2">DESCR<span>IPCION</span></h3>
+            <div class="card-body">
+              <ul class="card-body2">
+                <li><strong>Ubicacion: </strong>
+                  <ul>
+                    <li>Sector noroeste, área aislada.</li>
+                  </ul>
+                </li>
+                <li><strong>Capacidad: </strong>
+                  <ul>
+                    <li> 90 coches</li>
+                  </ul>
+                </li>
+                <li><strong>Caracteristicas: </strong>
+                  <ul>
+                    <li>Pantalla: 14 x 7 metros, Full HD</li>
+                    <li>Servicios: Snack bar, Baños, Zona de sustos</li>
+                  </ul>
+                </li>
+              </ul>
+              <section class="row row-boton">
+                <a class="btn-peli" href="funciones.html">VER FUNCIONES</a>
+              </section>
+            </div>
+        </section>
+      </section>
+  </article>
+  <!--FIN SALA 9 Y 10-->
+
+  
+
+  <!-- INICIO FOOTER -->
+  <footer th:insert="fragments/footer :: pie-pagina" class="footer">
+  </footer>
+  <!-- FIN FOOTER -->
+	<!-- LIBRERIAS PARA EL MENÚ -->
+	<script th:src="@{/js/headroom.min.js}"></script>
+	<script th:src="@{/js/menu-flex.js}"></script>
+  <!-- FIN DE LIBRERIAS PARA EL MENÚ -->
+  <!-- JSS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
